@@ -22,6 +22,6 @@ public class TestController {
 	@GetMapping("/test")
 	public ResponseEntity<List<Test>> getTest(){
 		List<Test> listTest =testService.getTest();
-		return new ResponseEntity<List<Test>>(listTest, HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>(listTest, HttpStatus.BAD_REQUEST);
 	}
 }
